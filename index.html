@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+<title>詐欺</title>
+<style>
+pre{
+font-size:50px
+display: inline;
+}
+</style>
+</head>
+<body backgyound-color:red>
+<script>
+var sec = 600;
+ 
+  // 開始日時を設定
+  var dt = new Date();
+  console.log("Start: ", dt);
+  // 終了時刻を開始日時+カウントダウンする秒数に設定
+  var endDt = new Date(dt.getTime() + sec * 1000);
+  console.log("End : ", dt);
+
+  // 1秒おきにカウントダウン
+  var cnt = sec;
+  var id = setInterval(function(){
+    cnt--;
+    document.getElementById('edit_area').innerHTML =  Math.floor(cnt);
+
+    // 現在日時と終了日時を比較
+    dt = new Date();
+    if(dt.getTime() >= endDt.getTime()){
+      location.href = "http://htmlpreview.github.io/?https://github.com/Gobousei/himatubusi/blob/main/index.html";
+    }
+  }, 1000);
+</script>
+<pre id="edit_area"></pre>
+<pre>
+秒以内に空気を吸いなさい。さもなくば、あなたは死に至ります。
+わははははははははははははははははははははははははははははははははははははははははははははははははははははは
+ははははははははははははははは
+</pre>
+</body>
+</html>
