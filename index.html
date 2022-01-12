@@ -1,42 +1,91 @@
-<!doctype html>
-<head>
-<title>詐欺</title>
-<style>
-pre{
-font-size:100px
-display: inline;
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>チャンクテスト練習用</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+                header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background:url(https://lh3.googleusercontent.com/iRrZlRJmrp7eBr5BKXHxhl9YDmBhfOjwVpNotAMax5P57nsvQKCIlkPHVejQsnZ8JLC1_WOSwa05TXAjsdD3EQTk1SOrbLaKV1SJ4eeG9a3AU53JASzjR_fyVpnu7HBORg=w2310);
+  align-items: center;
 }
-</style>
-</head>
-<body color:red>
-<script>
-var sec = 600;
- 
-  // 開始日時を設定
-  var dt = new Date();
-  console.log("Start: ", dt);
-  // 終了時刻を開始日時+カウントダウンする秒数に設定
-  var endDt = new Date(dt.getTime() + sec * 1000);
-  console.log("End : ", dt);
-
-  // 1秒おきにカウントダウン
-  var cnt = sec;
-  var id = setInterval(function(){
-    cnt--;
-    document.getElementById('edit_area').innerHTML =  Math.floor(cnt);
-
-    // 現在日時と終了日時を比較
-    dt = new Date();
-    if(dt.getTime() >= endDt.getTime()){
-      location.href = "http://htmlpreview.github.io/?https://github.com/Gobousei/himatubusi/blob/main/index.html";
+.title {
+  color: white;
+  margin-right: auto;
+}
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
     }
-  }, 1000);
-</script>
-<pre id="edit_area"></pre>
-<pre>
-秒以内に空気を吸いなさい。さもなくば、あなたは死に至ります。
-わははははははははははははははははははははははははははははははははははははははははははははははははははははは
-ははははははははははははははは
-</pre>
-</body>
+            #text2{
+        margin-top: 70px;
+        margin-left: 800px;
+        font-size: 18px;
+        line-hight: 2em;
+        width:450px;
+        border-width: 5px;
+        padding: 20px;
+        background-color: #99CCFF;
+        border-style:double dotted groove;
+        border-color: #FF0000;
+        color:white;
+      }
+      #link{color:red;}
+      #link2{color:lime;}
+      a{
+  font-size: 20px;
+}
+.hero-1 {
+  @extend .hero;
+  background-size: cover;
+  background-position: center;
+}
+     </style>
+   <link rel="stylesheet" href="css/style.css"/>
+     </head>
+  <header>
+    <h1 class="title">チャンクテスト</h1>
+    <nav class="nav">
+      <ul class="menu-group">
+        <li class="menu-item"><a id="link2"href="https://forms.gle/Y7pPG16L2S1StXSv7"target=_blank>今週</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body bgcolor="#CBFFD3">
+
+    <font id="text2">チャンクの練習に使ってください</font><br>
+<a href="https://forms.gle/vcwnYmE9zAH9MoNc6"target=_blank>第８回</a><br>
+<a href="https://forms.gle/zFt8NrGZozPCmQFs8"target=_blank>第９回</a><br>
+<a href="https://forms.gle/yhp99zXZfULofKQA7"target=_blank>第１１回</a><br>
+<a href="https://forms.gle/XXXXwCLKBGxcNYCW7"target=_blank>第１５回　10月5週目</a><br>
+<a href="https://forms.gle/aPTKe3RHPKeNSMwd8"target=_blank>第１６回　11月1週目</a><br>
+<a href="https://forms.gle/e74dMHqHRycduhDS8"target=_blank>第１７回　11月2週目</a><br>
+<a href="https://forms.gle/V1Zrw3z8qdjqo5YeA"target=_blank>第１８回　11月3週目</a><br>
+<a id="link"href="https://forms.gle/Y7pPG16L2S1StXSv7"target=_blank>第１９回＜今週＞</a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+   <a href="" class="btn btn-flat"><span>PUSH！</span></a>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<a href="https://forms.gle/ye1gt86GU2ah9HyP8"target=_blank>エラー</a>
+<a href="" class="btn btn-flat"><span>PUSH！</span></a>
+  </body>
 </html>
