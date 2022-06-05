@@ -19,9 +19,17 @@ table th, table td {
   /*実線 1px 黒*/
 }
     </style>
+	  <script type="text/javascript">
+	var ua = navigator.userAgent;
+	if (ua.indexOf('iPhone') > 0
+			|| (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0)
+			|| ua.indexOf('Windows Phone') > 0) {
+		alert("このページはスマートフォンで見ることを考慮していません。見えにくかったらパソコンで見てください。");
+	}
+</script>
   </head>
   <body>
-	  
+	  <br></br>	  
     <table border="1">
 	<thead>
 		<tr>
